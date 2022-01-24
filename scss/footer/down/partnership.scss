@@ -1,0 +1,17 @@
+@import '../../mixins';
+
+.partnership {
+	@include flex(center, flex-start, row);
+	background: #1E1E2C;
+	border-radius: 8px;
+	border: none;
+	padding: 15px 20px;
+
+	span {
+		@include fonts(normal, 900, 13px, 16px);
+		font-family: 'Gotham', sans-serif;
+		text-align: center;
+		color: #96AADD;
+		margin-right: 55px;
+	}
+}

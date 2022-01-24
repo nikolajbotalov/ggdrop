@@ -1,0 +1,18 @@
+@import '../../mixins';
+
+.social {
+	@include flex(center, space-between, row);
+	width: 218px;
+
+	@media (max-width: 900px) {
+		display: none;
+	}
+
+	img {
+		@media (max-width: 900px) {
+			width: 10px;
+			height: 10px;
+			margin-right: 5px;
+		}
+	}
+}

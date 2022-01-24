@@ -1,0 +1,21 @@
+@import '../../mixins';
+
+.black-friday {
+	@include flex(center, center, row);
+
+	@media (max-width: 900px) {
+		width: 100%;
+		height: 50%;
+	}
+
+	img {
+		width: 484px;
+		height: 202px;
+		z-index: 1;
+
+		@media (max-width: 900px) {
+			width: 25%;
+			height: 50%;
+		}
+	}
+}

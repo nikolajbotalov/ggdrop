@@ -1,0 +1,98 @@
+@import '../../mixins';
+
+.settings {
+	@include flex(center, space-between, row);
+	margin-right: 33px;
+
+	@media (max-width: 900px) {
+		margin-right: 8px;
+		position: relative;
+	}
+
+	&__lang {
+		@include flex(center, space-between, row);
+		height: 36px;
+		padding: 10px 5px 10px 10px;
+		background: #2A2B35;
+		border-radius: 10px;
+		margin-right: 11px;
+
+		@media (max-width: 900px) {
+			position: absolute;
+			top: -49px;
+			left: 55px;
+			height: 18px;
+			padding: 15px 10px;
+			border-radius: 5px;
+			margin-right: 5px;
+		}
+	
+		img {
+			margin-right: 7px;
+
+			@media (max-width: 900px) {
+				margin-right: 3px;
+				height: 11px;
+				width: 11px;
+			}
+		}
+	
+		span {
+			@include fonts(normal, bold, 12px, 14px);
+			font-family: 'Gotham', sans-serif;
+			font-feature-settings: 'kern' off;
+			text-transform: uppercase;
+			color: #CECFDE;
+
+			@media (max-width: 900px) {
+				@include fonts(normal, bold, 10px, 7px);
+			}
+		}
+	}
+
+	&__country {
+		background-color: transparent;
+		border: none;
+
+		@media (max-width: 900px) {
+			width: 17px;
+		}
+	}
+
+	&__volume {
+		height: 36px;
+		position: relative;
+		border: 1px solid #2A2B35;
+		border-radius: 10px;
+
+		@media (max-width: 900px) {
+			height: 18px;
+			border-radius: 5px;
+			display: none;
+		}
+	
+		&-badge {
+			position: absolute;
+			top: -5px;
+			left: 21px;
+
+			@media (max-width: 900px) {
+				top: -4px;
+				left: 11px;
+				width: 9px;
+			}
+		}
+	
+		&-icon {
+			margin: 8px 8px;
+			width: 18px;
+			height: 18px;
+
+			@media (max-width: 900px) {
+				margin: 4px 4px;
+				width: 9px;
+				height: 9px;
+			}
+		}
+	}
+}

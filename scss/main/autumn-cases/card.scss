@@ -1,0 +1,50 @@
+@import '../../mixins';
+
+.card {
+	position: relative;
+
+	&__price {
+		margin-bottom: 13px;
+		
+		&-old {
+			@include fonts(normal, bold, 14px, 18px);
+			position: absolute;
+			top: 273px;
+			left: 152px;
+			padding: 6px 14px;
+			background: #DC4B42;
+			border-radius: 2px;
+			transform: matrix(0.98, 0, -0.22, 1, 0, 0);
+			font-family: 'DIN Pro', sans-serif;
+			text-decoration-line: line-through;
+			color: #FFFFFF;
+
+			@media (max-width: 900px) {
+				@include fonts(normal, bold, 10px, 14px);
+				top: 180px;
+				left: 115px;
+				padding: 6px 14px;
+			}
+		}
+		
+		&-current {
+			@include fonts(normal, bold, 18px, 23px);
+			position: absolute;
+			top: 277px;
+			left: 97px;
+			padding: 7px 24px 7px 17px;
+			background: #EEAC64;
+			border-radius: 2px;
+			transform: matrix(0.98, 0, -0.22, 1, 0, 0);
+			font-family: 'DIN Pro', sans-serif;
+			color: #231B02 !important;
+
+			@media (max-width: 900px) {
+				@include fonts(normal, bold, 14px, 16px);
+				top: 195px;
+				left: 63px;
+				padding: 7px 24px 7px 17px;
+			}
+		}
+	}
+}

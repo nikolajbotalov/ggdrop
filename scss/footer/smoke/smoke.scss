@@ -1,0 +1,10 @@
+.smoke {
+	position: absolute;
+	top: 339px;
+	left: 339px;
+	opacity: 0.4;
+
+	@media (max-width: 900px) {
+		display: none;
+	}
+}

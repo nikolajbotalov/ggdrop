@@ -1,0 +1,14 @@
+@import '../mixins';
+
+.header {
+	@include flex(center, flex-start, row);
+	height: 235px;
+	padding-top: 16px;
+	padding-left: 29px;
+
+	@media (max-width: 900px) {
+		padding: 0;
+		height: auto;
+		@include flex(center, flex-start, column);
+	}
+}

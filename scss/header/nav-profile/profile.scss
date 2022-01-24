@@ -1,0 +1,155 @@
+@import '../../mixins';
+
+.profile {
+	display: flex;
+
+	@media (max-width: 900px) {
+		position: absolute;
+		left: 560px;
+	}
+
+	&__notify {
+		height: 46px;
+		position: relative;
+		border: 1px solid #2A2B35;
+		border-radius: 12px;
+		margin-right: 15px;
+
+		@media (max-width: 900px) {
+			height: 34px;
+			margin: 6px 7px;
+			border-radius: 6px;
+		}
+	
+		&-badge {
+			position: absolute;
+			left: 32px;
+			top: -5px;
+
+			@media (max-width: 900px) {
+				left: 24px;
+				top: -4px;
+				width: 13px;
+			}
+		}
+	
+		&-icon {
+			margin: 12px;
+			width: 20px;
+			height: 20px;
+
+			@media (max-width: 900px) {
+				margin: 6px 10px;
+				width: 12px;
+			}
+		} 
+	}
+
+	&__user {
+		display: flex;
+		margin-right: 22px;
+
+		@media (max-width: 900px) {
+			margin-right: 0px;
+		}
+
+		&-avatar {
+			margin-right: 14px;
+
+			@media (max-width: 900px) {
+				width: 30px;
+				margin-right: 7px;
+			}
+		}
+	
+		&-info {
+			@include flex(stretch, flex-start, column);
+
+			@media (max-width: 900px) {
+				padding-top: 9px;
+			}
+		}
+	
+		&-name {
+			@include fonts(normal, normal, 16px, 19px);
+			font-family: 'Gotham', sans-serif;
+			color: #E9E9E9;
+
+			@media (max-width: 900px) {
+				@include fonts(normal, normal, 10px, 14px);
+			}
+		}
+	
+		&-balance {
+			@include fonts(normal, 500, 20px, 24px); 
+			font-family: 'Gotham', sans-serif;
+			color: #63DEB1;
+
+			@media (max-width: 900px) {
+				@include fonts(normal, 500, 10px, 12px);
+			}
+		}
+	}
+
+	&__refill {
+		@include flex(center, flex-start, row);
+		padding: 12px 21px;
+		background: #5CBB98;
+		border-radius: 8px;
+		border: none;
+		margin-right: 10px;
+
+		@media (max-width: 900px) {
+			margin: 8px 5px;
+			padding: 6px 6px;
+			border-radius: 4px;
+		}
+
+		img {
+			@media (max-width: 900px) {
+				width: 14px;
+			}
+		}
+	
+		&-text {
+			@include fonts(normal, bold, 15px, 18px);
+			font-family: 'Gotham', sans-serif;
+			color: #F1FFDE;
+			margin-right: 17px;
+
+			@media (max-width: 900px) {
+				@include fonts(normal, bold, 12px, 14px);
+				font-family: 'Gotham', sans-serif;
+				color: #F1FFDE;
+				margin-right: 4px;
+			}
+		}
+	}
+
+	&__exit {
+		padding: 0;
+		height: 46px;
+		background: #272A38;
+		border-radius: 8px;
+		margin-right: 15px;
+		border: none;
+
+		@media (max-width: 900px) {
+			margin-top: 5px;
+			height: 34px;
+			border: 4px;
+			margin-right: 7px;
+		}
+	
+		&-icon {
+			margin: 12px;
+			width: 22px;
+			height: 22px;
+
+			@media (max-width: 900px) {
+				margin: 7px;
+				width: 15px;
+			}
+		}
+	}
+}

@@ -1,0 +1,11 @@
+.footer {
+	height: 552px;
+	background: #16161e;
+	margin-bottom: 18.41px;
+	position: relative;
+
+	@media (max-width: 900px) {
+		height: auto;
+		margin-bottom: 0;
+	}
+}

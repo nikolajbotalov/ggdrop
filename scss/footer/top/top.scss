@@ -1,0 +1,12 @@
+.top {
+	padding-top: 18.41px;
+	padding-left: 227.25px;
+	display: flex;
+	margin-bottom: 68px;
+
+	@media (max-width: 900px) {
+		padding-left: 25px;
+		padding-top: 0;
+		margin-bottom: 0;
+	}
+}

@@ -1,0 +1,10 @@
+@import '../../mixins';
+
+.down {
+	@include flex(center, space-between, row);
+	margin-left: 303px;
+
+	@media (max-width: 900px) {
+		display: none;
+	}
+}

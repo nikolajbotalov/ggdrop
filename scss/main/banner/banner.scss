@@ -1,0 +1,69 @@
+@import '../../mixins';
+
+.banner {
+	@include flex(center, flex-start, row);
+	position: relative;
+	height: 226px;
+
+	@media (max-width: 900px) {
+		width: 100%;
+		height: 135px;
+	}
+
+	&__bg {
+		position: absolute;
+		margin: 0px 95px 0px 65px;
+		width: 1860px;
+		height: 120px;
+		background: #2E2F40;
+		border-radius: 10px;
+
+		@media (max-width: 900px) {
+			top: 36px;
+			margin: 0px 35px 0px 35px;
+			width: 92%;
+			height: 45%;
+		}
+	}
+
+	&__left {
+		width: 461px;
+		height: 190px;
+		margin-right: 651px;
+		z-index: 1;
+
+		@media (max-width: 900px) {
+			margin-right: 177px;
+			width: 30%;
+			height: 65%;
+		}
+	}
+
+	&__center {
+		width: 297px;
+		height: 226px;
+		margin-top: 34px;
+		margin-right: 176px;
+		z-index: 1;
+
+		@media (max-width: 900px) {
+			margin-top: 10px;
+			margin-right: 20px;
+			width: 20%;
+			height: 80%;
+		}
+	}
+
+	&__right {
+		margin-top: 45px;
+		width: 423px;
+		height: 187px;
+		z-index: 1;
+
+		@media (max-width: 900px) {
+			margin-top: 17px;
+			width: 26%;
+			height: 65%;
+		}
+	}
+}

@@ -1,0 +1,15 @@
+.line-break {
+	position: absolute;
+	background: #262533;
+	border-radius: 1px;
+	top: 95px;
+	margin: 0 96px 0 66px;
+	width: 1860px;
+	height: 6px;
+
+	@media (max-width: 900px) {
+		width: 96%;
+		top: 41px;
+		margin: 0 15px 0 15px;
+	}
+}

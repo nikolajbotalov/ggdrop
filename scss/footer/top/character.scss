@@ -1,0 +1,17 @@
+.stats-character {
+	position: absolute;
+	width: 564px;
+	height: 609px;
+	left: calc(50% - 1133px/2 + 598px);
+	top: -103px;
+
+	&__blur {
+		position: absolute;
+		width: 701px;
+		height: 226px;
+		left: calc(50% - 701px/2 + 10.5px);
+		top: 387px;
+		background: rgba(21, 21, 29, 0.8);
+		backdrop-filter: blur(12px);
+	}
+}

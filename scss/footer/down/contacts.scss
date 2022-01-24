@@ -1,0 +1,45 @@
+@import '../../mixins';
+
+.contacts {
+	@include flex(center, space-between, row);
+	z-index: 2;
+	margin-right: 227px;
+
+	&__social {
+		margin-right: 177px;
+
+		img {
+			margin-right: 16px;
+		}
+	}
+
+	&__feedback {
+		@include flex(center, flex-start, row);
+
+		&-mail {
+			@include flex(center, flex-start, row);
+			padding: 19px 23px;
+			border: 1px dashed rgba(48, 34, 34, 0.86);
+			background: transparent;
+			border-radius: 8px;
+			margin-right: 40px;
+		}
+
+		&-icon {
+			margin-right: 14px;
+		}
+
+		&-text {
+			@include fonts(normal, 325, 15px, 18px);
+			font-family: 'Gotham', sans-serif;
+			color: #934C4C;
+		}
+
+		&-address {
+			@include fonts(normal, 325, 13px, 20px);
+			font-family: 'Gotham', sans-serif;
+			color: #4D4E57;
+			width: 388px;
+		}
+	}
+}

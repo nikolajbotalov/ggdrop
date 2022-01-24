@@ -1,0 +1,30 @@
+@import '../../mixins';
+
+.cards-container {
+	@include flex(center, center, row);
+	margin: 0px 50px 169px 50px;
+
+	@media (max-width: 900px) {
+		width: 86%;
+		flex-wrap: wrap;
+		margin: 0px 50px 110px 50px;
+	}
+
+	img {
+		width: 308px;
+		height: 310px;
+
+		@media (max-width: 900px) {
+			width: 220px;
+			height: 220px;
+		}
+	}
+
+	span {
+	@include flex(stretch, center, row);
+	@include fonts(normal, normal, 17px, 21px);
+	font-family: 'DIN Pro', sans-serif;
+	text-align: center;
+	color: #FFFFFF;
+	}
+}

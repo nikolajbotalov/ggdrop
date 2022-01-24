@@ -1,0 +1,9 @@
+.stats {
+	background: linear-gradient(260.7deg, rgba(26, 26, 32, 0.5) 19.27%, rgba(29, 29, 37, 0.5) 90.31%);
+	border-radius: 80px;
+	position: relative;
+
+	@media (max-width: 900px) {
+		display: none;
+	}
+}

@@ -1,0 +1,48 @@
+@import '../../mixins';
+
+.stats-items {
+	width: 1330px;
+	display: flex;
+	padding: 70px 116px 70px 84px;
+
+	&__item {
+		display: flex;
+
+		&:nth-child(odd) {
+			margin-right: 111px;
+			padding-bottom: 40px;
+		}
+	
+		img {
+			margin-right: 15px;
+			width: 46px;
+			height: 46px;
+		}
+	}
+
+	&__info {
+		@include flex(stretch, flex-start, column);
+	}
+
+	&__amount {
+		@include fonts(normal, 900, 25px, 30px);
+		font-family: 'Gotham', sans-serif;
+		text-transform: uppercase;
+		color: #F5F5F5;
+		flex: none;
+		order: 0;
+		flex-grow: 0;
+		margin: 2px 0px;
+	}
+
+	&__text {
+		@include fonts(normal, 350, 12px, 14px);
+		font-family: 'Gotham', sans-serif;
+		text-transform: uppercase;
+		color: #71727D;
+		flex: none;
+		order: 1;
+		flex-grow: 0;
+		margin: 2px 0px;
+	}
+}

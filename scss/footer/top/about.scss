@@ -1,0 +1,76 @@
+@import '../../mixins';
+
+.about {
+	@include flex(stretch, flex-start, column);
+
+	&__copyright {
+		@include flex(stretch, flex-start, column);
+		padding: 41px 18px 31px 111px;
+
+		@media (max-width: 900px) {
+			padding: 20px 0;
+		}
+	
+		&-company {
+			@include fonts(normal, 900, 17px, 20px);
+			font-family: 'Gotham', sans-serif;
+			text-transform: uppercase;
+			color: #FFFFFF;
+			margin-bottom: 2px;
+
+			@media (max-width: 900px) {
+				@include fonts(normal, 900, 13px, 16px);
+			}
+		}
+	
+		&-text {
+			@include fonts(normal, 325, 16px, 18px);
+			font-family: 'Gotham', sans-serif;
+			color: #CECFD6;
+
+			@media (max-width: 900px) {
+				@include fonts(normal, 325, 12px, 14px);
+			}
+		}
+	}
+
+	&__menu {
+		@include flex(stretch, flex-start, column);
+		padding-left: 35px;
+
+		@media (max-width: 900px) {
+			padding: 0;
+		}
+
+		ul {
+			@media (max-width: 900px) {
+				@include flex(stretch, flex-start, row);
+				padding: 0;
+				margin: 0;
+			}
+		}
+	
+		li {
+			list-style-type: none;
+			
+			&:not(:last-child) {
+				padding-bottom: 20px;
+
+				@media (max-width: 900px) {
+					padding-right: 15px;
+				}
+			}
+		}
+	
+		a {
+			@include fonts(normal, 325, 14px, 17px);
+			text-decoration: none;
+			font-family: 'Gotham', sans-serif;
+			color: #90929E;
+
+			@media (max-width: 900px) {
+				@include fonts(normal, 325, 13px, 14px);
+			}
+		}
+	}
+}
